@@ -525,7 +525,7 @@ with col_der:
             language="python",
             theme="tomorrow_night",       # tema oscuro estilo VS Code
             keybinding="vscode",          # atajos de teclado de VS Code
-            font_size=14,
+            font_size=20,
             tab_size=4,
             show_gutter=True,             # números de línea
             show_print_margin=False,
