@@ -462,7 +462,7 @@ col_izq, col_der = st.columns([1, 1.25], gap="large")
 # ─────────────────────── COLUMNA IZQUIERDA (Chat IA) ──────────────────────────
 with col_izq:
     st.markdown("### 🤖 PyBot — Tutor IA")
-   st.markdown('<p style="font-size: 1.1rem; color: #8b949e; margin-bottom: 1.5rem;">Pregúntame cualquier duda sobre este ejercicio. No te daré la solución directa, pero sí las pistas que necesitas.</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size: 1.1rem; color: #8b949e; margin-bottom: 1.5rem;">Pregúntame cualquier duda sobre este ejercicio. No te daré la solución directa, pero sí las pistas que necesitas.</p>', unsafe_allow_html=True)
 
     chat_box = st.container(height=320)
     with chat_box:
