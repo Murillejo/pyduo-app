@@ -3,6 +3,8 @@ PyDuo — Plataforma educativa de Python
 Arquitectura: UI Moderna + BD Local + Content Gating + Tutor IA
 Editor: streamlit-ace (motor CodeMirror con syntax highlighting Python)
 """
+from database.db_setup import init_db
+init_db()
 import streamlit as st
 import os
 from pathlib import Path
