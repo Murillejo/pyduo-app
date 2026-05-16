@@ -190,7 +190,7 @@ h3 { font-size: 0.88rem !important; color: #7affb4 !important; }
     border-radius: 0 0 8px 8px;
     padding: 0.85rem 1rem;
     font-family: 'Space Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: #c8d4f0;
     line-height: 1.6;
     min-height: 48px;
