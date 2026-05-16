@@ -1,0 +1,13 @@
+# Secretos y Entorno
+.env
+.streamlit/secrets.toml
+
+# Entornos Virtuales
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Bases de datos locales
+*.db
+*.sqlite3
