@@ -175,12 +175,19 @@ h3 { font-size: 0.88rem !important; color: #7affb4 !important; }
 }
 .ide-topbar .lang { color: #a8c4ff; font-size: 0.65rem; letter-spacing: 1px; }
 
-/* Mensajes del chat */
+/* Mensajes del chat y barra de texto */
 [data-testid="stChatMessage"] {
     background: #12141a !important;
     border: 1px solid #1e2230 !important;
     border-radius: 10px !important;
     margin-bottom: 8px !important;
+    font-size: 1.1rem !important;
+}
+[data-testid="stChatMessage"] p {
+    font-size: 1.1rem !important;
+}
+[data-testid="stChatInputTextArea"] {
+    font-size: 1.1rem !important;
 }
 
 /* Consola de salida */
@@ -455,7 +462,7 @@ col_izq, col_der = st.columns([1, 1.25], gap="large")
 # ─────────────────────── COLUMNA IZQUIERDA (Chat IA) ──────────────────────────
 with col_izq:
     st.markdown("### 🤖 PyBot — Tutor IA")
-    st.caption("Pregúntame cualquier duda sobre este ejercicio. No te daré la solución directa, pero sí las pistas que necesitas.")
+   st.markdown('<p style="font-size: 1.1rem; color: #8b949e; margin-bottom: 1.5rem;">Pregúntame cualquier duda sobre este ejercicio. No te daré la solución directa, pero sí las pistas que necesitas.</p>', unsafe_allow_html=True)
 
     chat_box = st.container(height=320)
     with chat_box:
