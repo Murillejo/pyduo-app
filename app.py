@@ -22,7 +22,7 @@ from database.models import Progress
 # ── 3. Editor con syntax highlighting ─────────────────────────────────────────
 # Instalar con: pip install streamlit-ace
 try:
-    from st_ace import st_ace
+    from streamlit_ace import st_ace
     HAS_ACE = True
 except ImportError:
     HAS_ACE = False
