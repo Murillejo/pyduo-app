@@ -209,7 +209,7 @@ h3 { font-size: 0.88rem !important; color: #7affb4 !important; }
 ::-webkit-scrollbar-track { background: #0d0f14; }
 ::-webkit-scrollbar-thumb { background: #2a3048; border-radius: 4px; }
 
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
 
 .stMarkdown p, .stMarkdown li { color: #c8d4f0 !important; line-height: 1.75 !important; }
 .stMarkdown code {
