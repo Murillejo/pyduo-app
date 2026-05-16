@@ -439,22 +439,21 @@ badge_class = {
 }.get(dificultad, "badge-principiante")
 
 
-# ── 10. Layout de dos columnas ─────────────────────────────────────────────────
+# ── 10. Explicación a pantalla completa ────────────────────────────────────────
+st.markdown(
+    f'<h1 style="font-size: 2.2rem; margin-bottom: 1rem;">{titulo} <span class="badge {badge_class}" style="font-size: 0.8rem;">{dificultad}</span></h1>',
+    unsafe_allow_html=True,
+)
+st.markdown(
+    f'<div class="contexto-box" style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 2rem; padding: 1.5rem;">{contexto}</div>',
+    unsafe_allow_html=True,
+)
+
+# ── 11. Layout de dos columnas (Chat y Editor) ─────────────────────────────────
 col_izq, col_der = st.columns([1, 1.25], gap="large")
 
-# ─────────────────────── COLUMNA IZQUIERDA ────────────────────────────────────
+# ─────────────────────── COLUMNA IZQUIERDA (Chat IA) ──────────────────────────
 with col_izq:
-
-    st.markdown(
-        f'<h1>{titulo} <span class="badge {badge_class}">{dificultad}</span></h1>',
-        unsafe_allow_html=True,
-    )
-    st.markdown(
-        f'<div class="contexto-box">{contexto}</div>',
-        unsafe_allow_html=True,
-    )
-
-    st.markdown("---")
     st.markdown("### 🤖 PyBot — Tutor IA")
     st.caption("Pregúntame cualquier duda sobre este ejercicio. No te daré la solución directa, pero sí las pistas que necesitas.")
 
